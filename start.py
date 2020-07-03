@@ -104,9 +104,9 @@ async def start() -> None:
         if fl.endswith('bot.py'):
             full = os.path.join(all_bot_dir, fl)
 
-            web_spec = importlib.util.spec_from_file_location('', full)
-            bot_module = importlib.util.module_from_spec(web_spec)
-            web_spec.loader.exec_module(bot_module)
+            bot_spec = importlib.util.spec_from_file_location('', full)
+            bot_module = importlib.util.module_from_spec(bot_spec)
+            bot_spec.loader.exec_module(bot_module)
 
             tg_client = getattr(bot_module, 'client')
             token = getattr(bot_module, 'bot_token')
