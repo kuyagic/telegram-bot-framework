@@ -1,0 +1,10 @@
+*.session
+*.session-journal
+
+__pycache__
+*.pyc
+.idea
+*.pid
+env.json
+session/*
+test/

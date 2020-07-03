@@ -1,0 +1,9 @@
+telethon
+cryptg
+pycryptodome
+requests
+pysocks
+hjson
+bs4
+lxml
+yarl
