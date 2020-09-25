@@ -1,4 +1,4 @@
-telethon
+telethon=1.14.0
 cryptg
 pycryptodome
 requests
